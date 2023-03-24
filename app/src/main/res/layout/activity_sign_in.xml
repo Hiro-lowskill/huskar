@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Sign_in">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:background="@drawable/sgn_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edPassword" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:background="@drawable/sgn_ed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edEmail" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="230dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="25dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="abc@email.com"
+        android:inputType="textEmailAddress"
+        android:textColor="#747688"
+        android:textColorHint="#747688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="125dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_forgot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="230dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textColor="#747688"
+        android:textColorHint="#747688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="270dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:background="#00FFFFFF"
+        android:onClick="OnClickSignIn"
+        android:src="@drawable/btn_sgnin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/inavis"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/txt_voiti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
