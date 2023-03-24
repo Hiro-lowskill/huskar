@@ -33,7 +33,9 @@ public class Sign_Up extends AppCompatActivity {
         super.onStart();
         FirebaseUser cUser = mAuth.getCurrentUser();
         if(cUser != null){
-            Toast.makeText(this,"Заполнено", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Вход успешно выполнен", Toast.LENGTH_SHORT).show();
+            Intent i =new Intent(this,MainActivity.class);
+            startActivity(i);
         }
         else{
             Toast.makeText(this,"Заполните данные", Toast.LENGTH_SHORT).show();

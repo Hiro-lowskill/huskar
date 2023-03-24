@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -67,4 +68,9 @@ public class ReadActivity extends AppCompatActivity {
 
 
     }
+    public void btn2(View view){
+        Intent i = new Intent(this,MainActivity.class);
+        startActivity(i);
+    }
+
 }
